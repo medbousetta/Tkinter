@@ -1,0 +1,11 @@
+from tkinter import *
+n=Tk()
+v2=IntVar()
+n.title("seconde")
+n.geometry("300x400")
+p=LabelFrame(n,text='login',padx=10,pady=20,bg="red")
+p.pack(fill=BOTH,expand=1)
+b1=Button(p,text="ok").place(x=10,y=5)
+e=Entry(p)
+e.place(x=100,y=5)
+n.mainloop()

@@ -1,0 +1,16 @@
+from tkinter import *
+n=Tk()
+n.geometry("400x400")
+n.title("seconde")
+l1 =Label(n,text="user name").place(x=20,y=20)
+l2 =Label(n,text="password").place(x=20,y=60)
+var1=StringVar()
+var2=StringVar()
+Image=PhotoImage("Aler.png")
+e1=Entry(n ,textvariable=var1,justify=CENTER).place(x=100,y=20)
+e2=Entry(n ,textvariable=var2,justify=CENTER).place(x=100,y=60)
+def p():
+ v=var1.get()+var2.get()
+ print(v)
+b1=Button(n,command=p,image=Image).place(x=150,y=100)
+n.mainloop()
